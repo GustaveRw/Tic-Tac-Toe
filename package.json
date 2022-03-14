@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "a tic tac toe game built with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustaveRw/Tic-Tac-Toe.git"
+  },
+  "author": "Jean Marie Gustave Mbonyinshuti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustaveRw/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/GustaveRw/Tic-Tac-Toe#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
