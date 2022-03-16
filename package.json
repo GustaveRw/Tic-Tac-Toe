@@ -1,10 +1,11 @@
 {
   "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "a tic tac toe game built with javascript",
+  "description": "A Tic Tac Toe game built with JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch server ./Server/server.js",
+    "test": "mocha ./Methods/tic-tac-toe/currentTurn_test.js ./Methods/tic-tac-toe/winningMove_test.js ./Methods/tic-tac-toe/gameCounter_test.js ./Methods/tic-tac-toe/winningCombo_test.js ./Methods/tic-tac-toe/firstMove_test.js ./Methods/tic-tac-toe/secondMove_test.js ./Methods/tic-tac-toe/addBoard_test.js ./Methods/tic-tac-toe/incrementalMove_test.js ./Methods/tic-tac-toe/winner_test.js ./Methods/tic-tac-toe/move_test.js ./Methods/tic-tac-toe/unbeatableTicTacToe_test.js ./Methods/api/apiMethods_test.js"
   },
   "repository": {
     "type": "git",
@@ -13,10 +14,21 @@
   "author": "Jean Marie Gustave Mbonyinshuti",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GustaveRw/Tic-Tac-Toe/issues"
+    "url": "git+https://github.com/GustaveRw/Tic-Tac-Toe/issues"
   },
-  "homepage": "https://github.com/GustaveRw/Tic-Tac-Toe#readme",
+  "homepage": "git+https://github.com/GustaveRw/Tic-Tac-Toe#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "5.0.0",
+    "npm": "3.3.6"
   }
 }
